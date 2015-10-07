@@ -1,0 +1,11 @@
+.* 
+*.term 
+*.aux 
+*.log 
+*-blx.bib 
+*.bbl 
+*.blg 
+*.out 
+*.run.xml
+*.synctex.gz
+*.pdf
