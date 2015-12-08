@@ -101,7 +101,7 @@
 % diagrams -------------------------------------------------------
 % figures ---------------------------------------------------------
 %%% borrowed from Dror's cobordisms paper, use this to include eps or pdf graphics.
-\newcommand{\pathtodiagrams}{diagrams/pdf/}
+\newcommand{\pathtodiagrams}{}
 
 \newcommand{\mathfig}[2]{{\hspace{-3pt}\begin{array}{c}%
   \raisebox{-2.5pt}{\includegraphics[width=#1\textwidth]{\pathtodiagrams #2}}%
@@ -190,7 +190,6 @@
 
 % Marginal notes in draft mode -----------------------------------
 \newcommand{\scott}[1]{\stepcounter{comment}{{\color{green} $\star^{(\arabic{comment})}$}}\marginpar{\color{green}  $\star^{(\arabic{comment})}$ \usefont{T1}{scott}{m}{n}  #1 --S}}     % draft mode
-\newcommand{\dave}[1]{\textcolor{purple}{\comment{\textcolor{purple}{#1}}}}
 \newcounter{comment}
 \newcommand{\noop}[1]{}
 \newcommand{\todo}[1]{\textcolor{blue}{\textbf{TODO: #1}}}
