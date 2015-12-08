@@ -8,4 +8,5 @@
 *.out 
 *.run.xml
 *.synctex.gz
-*.pdf
+proposal.pdf
+preproposal.pdf
