@@ -8,5 +8,7 @@
 *.out 
 *.run.xml
 *.synctex.gz
+*.fdb_latexmk
+*.fls
 proposal.pdf
 preproposal.pdf
