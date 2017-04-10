@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{caption}
 
 \input{preamble.tex}
 \title{MSRI Spring 2020 semester on \textbf{Quantum Symmetries}: summary}
@@ -24,13 +25,49 @@ Within the framework of studying the various guises of quantum symmetries, and t
 \item Topological order and topological quantum computation.
 \end{enumerate}
 
-Potential graphics to use alongside the one-page summary:
-\begin{itemize}
-\item An associahedron: $$\mathfig{0.4}{A4-vertices}$$
-\item An equation from the skein theory of quantum $G_2$: $$\mathfig{0.75}{G2}$$
-\item A diagram showing modularisation of a quantum group at a root of unity:
-$$\mathfig{0.3}{sl4-modularisation-domain} \qquad \text{or} \qquad \mathfig{0.3}{sl4-300}$$
-\end{itemize}
-We'd love to find an appropriate graphic illustrating string diagrams for a tensor category (possibly suggesting a Levin-Wen string net model), but haven't found anything.
+
+\newcommand{\drawI}{ \begin{tikzpicture}[baseline=0cm]
+ 	\draw (0,.2) .. controls +(30:.3cm) .. (45:.8cm);
+ 	\draw (0,.2) .. controls +(150:.3cm) .. (135:.8cm);
+	\draw (0,.2) -- (0,-.2);
+ 	\draw (0,-.2) .. controls +(-30:.3cm) .. (-45:.8cm);
+ 	\draw (0,-.2) .. controls +(-150:.3cm) .. (-135:.8cm);
+\end{tikzpicture}
+}
+
+\newcommand{\drawH}{ \begin{tikzpicture}[baseline=0cm,rotate=90]
+ 	\draw (0,.2) .. controls +(30:.3cm) .. (45:.8cm);
+ 	\draw (0,.2) .. controls +(150:.3cm) .. (135:.8cm);
+	\draw (0,.2) -- (0,-.2);
+ 	\draw (0,-.2) .. controls +(-30:.3cm) .. (-45:.8cm);
+ 	\draw (0,-.2) .. controls +(-150:.3cm) .. (-135:.8cm);
+\end{tikzpicture}}
+
+\newcommand{\cupcap}{\begin{tikzpicture}[baseline=0cm]
+	\draw (45:.8cm) .. controls (0,0) .. (135:.8cm);
+	\draw (-45:.8cm) .. controls (0,0) .. (-135:.8cm);
+\end{tikzpicture}}
+
+\newcommand{\twostrandid}{\begin{tikzpicture}[baseline=0cm,rotate=90]
+	\draw (45:.8cm) .. controls (0,0) .. (135:.8cm);
+	\draw (-45:.8cm) .. controls (0,0) .. (-135:.8cm);
+\end{tikzpicture}}
+
+\begin{figure}
+\caption*{
+A single skein relation simultaneously describes $Q$-systems in subfactor theory, the representation theory of quantum $SO(3)$, and the chromatic polynomial.}
+$$  \drawH \; - \; \drawI \; + \frac{1}{d-1}\; \twostrandid \; -  \frac{1}{d-1}\; \cupcap = 0.$$
+\end{figure}
+
+%\item An equation from the skein theory of quantum $G_2$: $$\mathfig{0.75}{G2}$$
+\begin{figure}
+%$$\mathfig{0.3}{sl4-modularisation-domain} \qquad \qquad \mathfig{0.3}{sl4-300}$$
+%\item $$\mathfig{0.75}{radford}$$
+%A graphical proof of the Radford isomorphism.
+%\item
+$$\mathfig{0.75}{B-D-SP-V}$$
+\caption*{The study of tensor categories involves the interplay of representation theory, combinatorics, number theory, and low dimensional topology
+(from a string diagram calculation, describing the 3-dimensional bordism 2-category [\arxiv{1411.0945}]).}
+\end{figure}
 
 \end{document}
